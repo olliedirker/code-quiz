@@ -1,5 +1,6 @@
-function startQuiz(){
-question()
+function startQuiz() {
+    question()
+    console.log('start button working')
 }
 
 
@@ -11,12 +12,18 @@ answer.addEventListener("click", nextQuestion)
 
 
 
-function question(){
-
-    if(("#correct")){
-
-    }
+function question() {
     
 }
+
+function nextQuestion(event){
+console.log(event.target.classList[1]);
+
+if(event.target.classList[1] === "incorrect")
+console.log('clicking an incorrect answer works')
+else(event.target.classList[1] === "correct")
+console.log('clicking correct works')
+}
+
 
 
